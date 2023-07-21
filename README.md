@@ -50,7 +50,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
    
 2. Navigate to your local folder. For this tutorial, I have created a new folder called "My Source Codes". Be sure to "Trust the authors of the files in this folder" as shown below.
 
-  ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/908f2668-b951-4fe5-9bb2-482fb18cf5a9)
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/908f2668-b951-4fe5-9bb2-482fb18cf5a9)
 
 # Connect to IBMi
 1. It is important to have SSH installed in our IBM server. SSH, SFTP, and related programs are provided by the [5733-SC1 Licensed Program Product](https://www.ibm.com/support/pages/node/1128123/) by default, but it doesn't hurt to check.
