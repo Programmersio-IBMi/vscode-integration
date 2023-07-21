@@ -1,12 +1,12 @@
 # vscode-integration
 A setup guide to get started on VS Code and IBMi. This guide includes, 
 
-- Installing the required extensions
-- Setup your local folder
-- Connect to the IBMi
-- Coding in VS Code
-- Compiling in VS Code
-- Terminal (TN5250)
+1. Installing the required extensions
+2. Setup your local folder
+3. Connect to the IBMi
+4. Coding in VS Code
+5. Compiling in VS Code
+6. Terminal (TN5250)
 
 # First things first
 It is best to sync the settings of your VS Code preferences to your company's GitHub account. So that when you reinstall VS Code (for some weird reasons), you  will have an option to reset your preferences and plugins. Follow the below steps to get started.
@@ -34,7 +34,7 @@ It is best to sync the settings of your VS Code preferences to your company's Gi
    ![4](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/339ec392-b124-4d45-bedb-ee98a1eeaad2)
 
 
-# Install the required extensions.
+# 1) Install the required extensions.
 1. Go to the extensions panel (Ctrl + Shift + X) and install the extension "IBM i Development Pack". This is a collection that contains 13 extensions useful for coding in IBMi.
 
    ![5](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/9c34aa29-5645-4394-933d-613f936e07fa)
@@ -47,7 +47,7 @@ It is best to sync the settings of your VS Code preferences to your company's Gi
 
     On the right side pane, click "Trust Window" (mine is already trusted)
 
-# Setup your local folder
+# 2) Setup your local folder
 It is important to setup a local folder if you wish to keep a copy of the sources in your local machine as a backup.
 
 1. Go to the Explorer Tab (Ctrl + Shift + E) and click on "Open Folder".
@@ -57,7 +57,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
    ![7](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/3cf60692-32d9-47c6-b715-45e328c0f96e)
 
 
-# Connect to IBMi
+# 3) Connect to IBMi
 1. It is important to have SSH installed in our IBM server. SSH, SFTP, and related programs are provided by the [5733-SC1 Licensed Program Product](https://www.ibm.com/support/pages/node/1128123/) by default, but it doesn't hurt to check.
    
    In your IBMi, check whether SSH Server is already started. Run the CL command `NETSTAT *CNN` and search for any activity on port 22. If you don't see any activity then you can start SSH with the CL command `STRTCPSVR *SSHD`. Typing `WRKACTJOB` should now show jobs running function “PGM-sshd.” To end SSH, type `ENDTCPSVR *SSHD`.
