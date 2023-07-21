@@ -80,7 +80,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
       c. **IBM recommends using bash as your default shell.**
 
-   You can set the bash as your default shell for this session instead of the usual QSH (QShell). Why? Because BASH has cooler features like command history (using up arrow keys to access previous commands). If you wish to do later, you may refer to this [guide](https://ibmi-oss-docs.readthedocs.io/en/latest/troubleshooting/SETTING_BASH.html)
+   You can set the bash as your default shell for this session instead of the usual QSH (QShell). Why? Because BASH has many more cooler features and command history (using up arrow keys to access previous commands) is one of them. If you wish to do later, you may refer to this [guide](https://ibmi-oss-docs.readthedocs.io/en/latest/troubleshooting/SETTING_BASH.html)
 
       d. **Deploy Direcotry**
 
