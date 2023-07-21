@@ -63,9 +63,10 @@ It is important to setup a local folder if you wish to keep a copy of the source
   
 3. Enter the connection details such as connection name, IP address, User Name & Password and click connect. 
 
-  ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/2057b033-d16a-4e85-905e-9665bdfed2fd)
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/2057b033-d16a-4e85-905e-9665bdfed2fd)
 
 4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications at the bottom left like below. We will go through one by one.
+
    ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/a4c94ffc-6e04-475b-a27f-1ad6b7192ce0)
 
    a. **Debug PTF Installed**
