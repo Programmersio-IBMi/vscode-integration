@@ -58,8 +58,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
    In your IBMi, check whether SSH Server is already started. Run the CL command `NETSTAT *CNN` and search for any activity on port 22. If you don't see any activity then you can start SSH with the CL command `STRTCPSVR *SSHD`. Typing `WRKACTJOB` should now show jobs running function “PGM-sshd.” To end SSH, type `ENDTCPSVR *SSHD`.
 
 2. Once the SSH daemon is started on your IBMi head back to VS Code. Now you should see a new IBMi icon present on the left most panel. Click on it and select "Connect to an IBM i" button.
-
-  ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/d9a096e3-a4de-4d74-8f63-04135cecfc16)
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/d9a096e3-a4de-4d74-8f63-04135cecfc16)
   
 3. Enter the connection details such as connection name, IP address, User Name & Password and click connect. 
 
@@ -69,11 +68,20 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
    ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/a4c94ffc-6e04-475b-a27f-1ad6b7192ce0)
 
-   a. **Debug PTF Installed**
+      a. **Debug PTF Installed**
    
    This means your IBMi has the debug PTF installed in it. We can make use of this PTF to debug the programs from outside of IBMi (In our case it is VS Code). Click this [link](#) to see how to setup debug in VS Code.
 
-    b. **Current Library is set to XXXXXX**
+      b. **Current Library is set to XXXXXX**
    
-   We can setup the current library for this VS Code connection to our liking. You can either change now or if you decide to change later, you can do so by selecting it in the "User Library List" pane on the left.
+   We can setup the current library for this VS Code connection to our liking. You can either change now or if you decide to change later, you can do so by accessing the "User Library List" pane on the left.
          ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/5687de01-26c0-4b9a-98e0-670f3466e39b)
+   
+
+      c. **IBM recommends using bash as your default shell.**
+
+   You can set the bash as your default shell for this session instead of the usual QSH (QShell). Why? Because BASH has cooler features like command history (using up arrow keys to access previous commands). If you wish to do later, you may refer to this [guide](https://ibmi-oss-docs.readthedocs.io/en/latest/troubleshooting/SETTING_BASH.html)
+
+      d. **Deploy Direcotry**
+
+   You can set you default deploy directory to the specified IFS folder. Remember the previously created folder "My Source Codes"? Whatever code you write and save in this location will have the ability to be pushed to your IBMi IFS folder that you specify in the "Deploy Directory". Once the source code has come to your IBMi you can easily issue a `CPYFRMIMPF` CL command to copy the sources to your IBMi libraries. 
