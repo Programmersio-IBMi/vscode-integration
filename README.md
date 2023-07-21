@@ -65,4 +65,14 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/2057b033-d16a-4e85-905e-9665bdfed2fd)
 
-4. Once a connection is made, 
+4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications at the bottom left like below. We will go through one by one.
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/a4c94ffc-6e04-475b-a27f-1ad6b7192ce0)
+
+   a. **Debug PTF Installed**
+   
+   This means your IBMi has the debug PTF installed in it. We can make use of this PTF to debug the programs from outside of IBMi (In our case it is VS Code). Click this [link](#) to see how to setup debug in VS Code.
+
+    b. **Current Library is set to XXXXXX**
+   
+   We can setup the current library for this VS Code connection to our liking. You can either change now or if you decide to change later, you can do so by selecting it in the "User Library List" pane on the left.
+         ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/5687de01-26c0-4b9a-98e0-670f3466e39b)
