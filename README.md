@@ -19,11 +19,13 @@ It is best to sync the settings of your VS Code preferences to your company's Gi
    
 3. Click "Sign in & Turn on" >> Click Sign in with GitHub.
    
-    ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/c84fd90c-1b68-4363-adf6-9d404da47fe8)
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/c23ea382-6db1-4bb5-838f-e23654344f1b)
+
 
 4. Click open on the browser window (that just got opened)
    
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/d9a76e55-86c9-4c2f-97be-f1bc8755800e)
+   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/833d02b6-c24d-4351-9a82-7fcdc10abf42)
+
 
 5. Click open again inside VS Code and you're all set.
 
