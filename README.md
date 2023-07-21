@@ -13,34 +13,38 @@ It is best to sync the settings of your VS Code preferences to your company's Gi
 
 1. Open VS Code and click on the gear icon on the bottom left
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/a5da6327-44be-4acd-82ba-72acafc4e710)
+   ![1](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/502aa3eb-eb38-490e-a335-b9024bb68006)
+
 
 2. Click "Turn on Settings sync". You will be prompted with the list of settings you want to sync. Tick whatever settings you want to sync. I prefer to sync them all.
    
 3. Click "Sign in & Turn on" >> Click Sign in with GitHub.
    
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/c23ea382-6db1-4bb5-838f-e23654344f1b)
+   ![2](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/b4744a5a-1c36-48bf-9581-d9cd85f5e0d9)
+
 
 
 4. Click open on the browser window (that just got opened)
    
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/833d02b6-c24d-4351-9a82-7fcdc10abf42)
+   ![3](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/374802bf-7a8c-4ff1-9a4f-62b1128af7ba)
 
 
 5. Click open again inside VS Code and you're all set.
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/cade90b4-b908-4df7-9b68-4326942fc16f)
+   ![4](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/339ec392-b124-4d45-bedb-ee98a1eeaad2)
+
 
 # Install the required extensions.
 1. Go to the extensions panel (Ctrl + Shift + X) and install the extension "IBM i Development Pack". This is a collection that contains 13 extensions useful for coding in IBMi.
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/9283fecb-376a-417a-9664-dc87d8c5fd28)
+   ![5](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/9c34aa29-5645-4394-933d-613f936e07fa)
 
    Most of the extensions are open source, except for the ones created by IBM. You can view about the authors and the respective licenses on the [market place page.](https://marketplace.visualstudio.com/items?itemName=HalcyonTechLtd.ibm-i-development-pack)
 
 3. If you're having any issues installing the plugin, you need to make the below changes. Click the bottom left corner as shown in the screenshot below. 
 
-    ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/1a190d14-1e02-43a5-a890-82b9c6da5c0c)
+    ![6](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/17982f39-5045-483e-95b8-a5bec8162209)
+
     On the right side pane, click "Trust Window" (mine is already trusted)
 
 # Setup your local folder
@@ -50,7 +54,8 @@ It is important to setup a local folder if you wish to keep a copy of the source
    
 2. Navigate to your local folder. For this tutorial, I have created a new folder called "My Source Codes". Be sure to "Trust the authors of the files in this folder" as shown below.
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/908f2668-b951-4fe5-9bb2-482fb18cf5a9)
+   ![7](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/3cf60692-32d9-47c6-b715-45e328c0f96e)
+
 
 # Connect to IBMi
 1. It is important to have SSH installed in our IBM server. SSH, SFTP, and related programs are provided by the [5733-SC1 Licensed Program Product](https://www.ibm.com/support/pages/node/1128123/) by default, but it doesn't hurt to check.
@@ -58,15 +63,18 @@ It is important to setup a local folder if you wish to keep a copy of the source
    In your IBMi, check whether SSH Server is already started. Run the CL command `NETSTAT *CNN` and search for any activity on port 22. If you don't see any activity then you can start SSH with the CL command `STRTCPSVR *SSHD`. Typing `WRKACTJOB` should now show jobs running function “PGM-sshd.” To end SSH, type `ENDTCPSVR *SSHD`.
 
 2. Once the SSH daemon is started on your IBMi head back to VS Code. Now you should see a new IBMi icon present on the left most panel. Click on it and select "Connect to an IBM i" button.
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/d9a096e3-a4de-4d74-8f63-04135cecfc16)
+   ![8](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/52aa4180-9910-487f-bdd8-90938fbf077d)
+
   
 3. Enter the connection details such as connection name, IP address, User Name & Password and click connect. 
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/2057b033-d16a-4e85-905e-9665bdfed2fd)
+   ![9](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/dc3bcb89-0b24-4c79-a021-9114ac8d5ef0)
+
 
 4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications at the bottom left like below. We will go through one by one.
 
-   ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/a4c94ffc-6e04-475b-a27f-1ad6b7192ce0)
+   ![10](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/cc4c759a-9d2f-4ee1-94f9-059ee6c477f7)
+
 
       a. **Debug PTF Installed**
    
@@ -75,7 +83,8 @@ It is important to setup a local folder if you wish to keep a copy of the source
       b. **Current Library is set to XXXXXX**
    
    We can setup the current library for this VS Code connection to our liking. You can either change now or if you decide to change later, you can do so by accessing the "User Library List" pane on the left.
-         ![image](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/5687de01-26c0-4b9a-98e0-670f3466e39b)
+         ![11](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/def6aecc-59a7-4e77-8438-18f02eb87334)
+
    
 
       c. **IBM recommends using bash as your default shell.**
