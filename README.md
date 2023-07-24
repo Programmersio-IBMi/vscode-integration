@@ -93,4 +93,10 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
       d. **Deploy Direcotry**
 
-   You can set you default deploy directory to the specified IFS folder. Remember the previously created folder "My Source Codes"? Whatever code you write and save in this location will have the ability to be pushed to your IBMi IFS folder that you specify in the "Deploy Directory". Once the source code has come to your IBMi you can easily issue a `CPYFRMIMPF` CL command to copy the sources to your IBMi libraries. 
+   You can set you default deploy directory to the specified IFS folder. Remember the previously created folder "My Source Codes"? Whatever code you write and save in this location will have the ability to be pushed to your IBMi IFS folder that you specify in the "Deploy Directory". Once the source code has come to your IBMi you can easily issue a `CPYFRMIMPF` CL command to copy the sources to your IBMi libraries.
+
+      e. **Can't use SQL because of incorrect CCSID**
+
+   In order to have the ability to run SQL Queries from within VS Code, we need to set the CCSID of this session to 37. If you get any error related to SQL Queries and CCSID, then you need to head over to your IBMi and set the CCSID as 37. The default is 65535.
+
+   
