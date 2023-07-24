@@ -91,7 +91,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
    You can set the bash as your default shell for this session instead of the usual QSH (QShell). Why? Because BASH has many more cooler features and command history (using up arrow keys to access previous commands) is one of them. If you wish to do later, you may refer to this [guide](https://ibmi-oss-docs.readthedocs.io/en/latest/troubleshooting/SETTING_BASH.html)
 
-      d. **Deploy Direcotry**
+      d. **Deploy Directory**
 
    You can set you default deploy directory to the specified IFS folder. Remember the previously created folder "My Source Codes"? Whatever code you write and save in this location will have the ability to be pushed to your IBMi IFS folder that you specify in the "Deploy Directory". Once the source code has come to your IBMi you can easily issue a `CPYFRMIMPF` CL command to copy the sources to your IBMi libraries.
 
