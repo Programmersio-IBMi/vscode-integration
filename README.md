@@ -99,4 +99,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
    In order to have the ability to run SQL Queries from within VS Code, we need to set the CCSID of this session to 37. If you get any error related to SQL Queries and CCSID, then you need to head over to your IBMi and set the CCSID as 37. The default is 65535.
 
+      f. **Code for IBM i may not function correctly until your user has a home directory...**
+
+   In order to have a deploy directory, it is must to set a home directory in the IFS path. You might be shown with this warning message if the home directory is not set. You can either use PASE (Ctrl + Shift + J) to create a /home/<user_name> directory or create within IBMi itself using `WRKLNK` command.
    
