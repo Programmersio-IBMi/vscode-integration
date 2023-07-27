@@ -52,7 +52,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
 1. Go to the Explorer Tab (Ctrl + Shift + E) and click on "Open Folder".
    
-2. Navigate to your local folder. For this tutorial, I have created a new folder called "My Source Codes". Be sure to "Trust the authors of the files in this folder" as shown below.
+2. Navigate to your local folder. For this tutorial, I have created a new folder called "MySourceCodes". Be sure to "Trust the authors of the files in this folder" as shown below.
 
    ![7](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/3cf60692-32d9-47c6-b715-45e328c0f96e)
 
@@ -103,3 +103,11 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
    In order to have a deploy directory(where your source codes will be deployed), it is must to create your own user profile directory inside the /home directory in the IFS. You might be shown with this warning message if the home directory is not set correctly. The fix is to create a user_profile directory. If you're comfortbale with Shell command, you can use PASE (Ctrl + Shift + J from VS Code) to create a directory. The command is `mkdir /home/<your_ibmi_username>`. If you're comfortable with IBMi green screen, then you can issue a `MKDIR DIR('/home/<your_ibmi_username>')` CL command. I would suggest you to use lower case while creating your directory as UNIX Shell is case sensitive. 
    
+
+
+
+
+```
+Foot notes:
+[https://www.ibm.com/support/pages/starting-ssh-daemon-dedicated-subsystem-environment](https://www.ibm.com/support/pages/starting-ssh-daemon-dedicated-subsystem-environment)
+```
