@@ -107,7 +107,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
 
 
-```
-Foot notes:
-[https://www.ibm.com/support/pages/starting-ssh-daemon-dedicated-subsystem-environment](https://www.ibm.com/support/pages/starting-ssh-daemon-dedicated-subsystem-environment)
-```
+
+**Further Reading**
+_[Since VS Code is using SSH to connect with IBMi, it is better to run the SSHD in a separate subsystem for better management of resources](https://www.ibm.com/support/pages/starting-ssh-daemon-dedicated-subsystem-environment)_
+
