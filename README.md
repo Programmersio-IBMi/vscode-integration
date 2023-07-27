@@ -71,7 +71,7 @@ It is important to setup a local folder if you wish to keep a copy of the source
    ![9](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/dc3bcb89-0b24-4c79-a021-9114ac8d5ef0)
 
 
-4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications/warnings/error messages at the bottom right like below. We will go through one by one.
+4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications/warnings/error messages at the bottom right like below. If you get multiple notifications and they all disappeared before you read them fully, fret not. All the notification will reside in the bottom right "bell" icon. We will go through one by one.
 
    ![10](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/cc4c759a-9d2f-4ee1-94f9-059ee6c477f7)
 
