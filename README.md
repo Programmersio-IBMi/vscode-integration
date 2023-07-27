@@ -101,5 +101,5 @@ It is important to setup a local folder if you wish to keep a copy of the source
 
       f. **Code for IBM i may not function correctly until your user has a home directory...**
 
-   In order to have a deploy directory, it is must to set a home directory in the IFS path. You might be shown with this warning message if the home directory is not set. You can either use PASE (Ctrl + Shift + J) to create a /home/<user_name> directory or create within IBMi itself using `WRKLNK` command.
+   In order to have a deploy directory(where your source codes will be deployed), it is must to create your own user profile directory inside the /home directory in the IFS. You might be shown with this warning message if the home directory is not set correctly. The fix is to create a user_profile directory. If you're comfortbale with Shell command, you can use PASE (Ctrl + Shift + J from VS Code) to create a directory. The command is `mkdir /home/<your_ibmi_username>`. If you're comfortable with IBMi green screen, then you can issue a `MKDIR DIR('/home/<your_ibmi_username>')` CL command. I would suggest you to use lower case while creating your directory as UNIX Shell is case sensitive. 
    
