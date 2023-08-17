@@ -11,7 +11,7 @@ A setup guide to get started on VS Code and IBMi. This guide includes,
 # First things first
 It is best to sync the settings of your VS Code preferences to your company's GitHub account. So that when you reinstall VS Code (for some weird reasons), you  will have an option to reset your preferences and plugins. Follow the below steps to get started.
 
-1. Open VS Code and click on the accounts(profile) icon on the bottom left
+1. Open VS Code and click on the accounts icon on the bottom left
 
    ![1](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/502aa3eb-eb38-490e-a335-b9024bb68006)
 
