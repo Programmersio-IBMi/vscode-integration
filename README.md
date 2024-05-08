@@ -1,6 +1,5 @@
-# vscode-integration 
+<h1> VS Code & IBMi </h1>
 
-- [vscode-integration](#vscode-integration)
 - [First things first](#first-things-first)
 - [1) Install the required extensions.](#1-install-the-required-extensions)
 - [2) Setup your local folder](#2-setup-your-local-folder)
