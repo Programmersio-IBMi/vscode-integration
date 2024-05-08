@@ -1,4 +1,4 @@
-# vscode-integration
+# vscode-integration 
 A setup guide to get started on VS Code and IBMi. This guide includes, 
 
 1. Installing the required extensions
