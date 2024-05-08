@@ -1,4 +1,12 @@
 # vscode-integration 
+
+- [vscode-integration](#vscode-integration)
+- [First things first](#first-things-first)
+- [1) Install the required extensions.](#1-install-the-required-extensions)
+- [2) Setup your local folder](#2-setup-your-local-folder)
+- [3) Connect to IBMi](#3-connect-to-ibmi)
+
+
 A setup guide to get started on VS Code and IBMi. This guide includes, 
 
 1. Installing the required extensions
