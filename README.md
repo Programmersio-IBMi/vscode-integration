@@ -69,16 +69,21 @@ It is important to setup a local folder if you wish to keep a copy of the source
    
    In your IBMi, check whether SSH Server is already started. Run the CL command `NETSTAT *CNN` and search for any activity on port 22. If you don't see any activity then you can start SSH with the CL command `STRTCPSVR *SSHD`. Typing `WRKACTJOB` should now show jobs running function “PGM-sshd.” To end SSH, type `ENDTCPSVR *SSHD`.
 
-2. Once the SSH daemon is started on your IBMi head back to VS Code. Now you should see a new IBMi icon present on the left most panel. Click on it and select "Connect to an IBM i" button.
+   You can also autostart the SSH daemon by modifying this entry here.
+   ```sql
+   select * from qusrsys.qatocstart
+   ```
+
+3. Once the SSH daemon is started on your IBMi head back to VS Code. Now you should see a new IBMi icon present on the left most panel. Click on it and select "Connect to an IBM i" button.
    ![8](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/52aa4180-9910-487f-bdd8-90938fbf077d)
 
   
-3. Enter the connection details such as connection name, IP address, User Name & Password and click connect. 
+4. Enter the connection details such as connection name, IP address, User Name & Password and click connect. 
 
    ![9](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/dc3bcb89-0b24-4c79-a021-9114ac8d5ef0)
 
 
-4. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications/warnings/error messages at the bottom right like below. If you get multiple notifications and they all disappeared before you read them fully, fret not. All the notification will reside in the bottom right "bell" icon. We will go through one by one.
+5. Once a connection is made, depending upon your IBMi server configuration, you might or might not see some notifications/warnings/error messages at the bottom right like below. If you get multiple notifications and they all disappeared before you read them fully, fret not. All the notification will reside in the bottom right "bell" icon. We will go through one by one.
 
    ![10](https://github.com/Programmersio-IBMi/vscode-integration/assets/139198015/cc4c759a-9d2f-4ee1-94f9-059ee6c477f7)
 
